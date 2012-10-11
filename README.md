@@ -13,11 +13,13 @@ Generation of text in a given style
 
 You can use the "PhraseGenerator" to generate text following a given style. For example you can generate phrases
 that are similar to the style used by Obama in his Inaugural speach in 2009:
+
 	>>> import nltk
 	>>> from generator import PhraseGenerator
 	>>> gen = PhraseGenerator(nltk.corpus.inaugural, '2009-Obama.txt')
 
 To start a phrase with "I", simply run:
+
 	>>> gen('i')
 
 which might give you something like:
